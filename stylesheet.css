@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'PT Sans', sans-serif;;
+    font-family: 'PT Sans', sans-serif;
     font-size: 14px;
     line-height: 22px;
 }
@@ -83,7 +83,7 @@ ul {
 .contact .telephone .number {
     font-size: 40px;
     font-weight: 300;
-    font-family: 'Open Sans', sans-serif;;
+    font-family: 'Open Sans', sans-serif;
 }
 .contact .telephone .ref strong{
     font-size: 24px;
