@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=PT+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'PT Sans', sans-serif;;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.header,
+.menu,
+.footer,
+.slider,
+.center-block {
+    position: relative;
+    max-width: 100%;
+}
+
+.in-content, .breadcrumb, .content-block{
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    width: 1000px;
+    padding: 0 10px;
+    justify-content: space-around;
+
+}
+
+/*--------------------HEADER------------------------*/
+
+.header {
+    background-color: rgb(220,220,220);
+    height: 230px;
+    margin-top: 0;
+    color: #767676;
+}
+
+.header .in-content{
+    align-items: center;
+    height: 230px;
+}
+.logo {
+    display: flex;
+}
+.logo .logo-info {
+    max-width: 150px;
+    margin: auto 10px;
+}
+.logo .logo-info strong {
+    font-size: 25px;
+    line-height: 10px;
+}
+
+.contact {
+    margin-left: auto;
+}
+.contact .telephone {
+    display: block;
+    letter-spacing: 1px;
+    line-height: 46px;
+    color: #767676;
+    text-align: right;
+}
+
+.contact .telephone .number {
+    font-size: 40px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;;
+}
+.contact .telephone .ref strong{
+    font-size: 24px;
+    font-weight: 700;
+    border-bottom-style: dashed;
+}
+
+#feedback-ref:hover {
+    cursor: pointer;
+}
+/*--------------------MENU------------------------*/
+
+.menu, .footer {
+    background-color: rgb(118, 118, 118);
+    color: white;
+}
+
+.menu .in-content {
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+.menu .in-content ul {
+    font-size: 27px;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+/*--------------------FOOTER------------------------*/
+
+.footer {
+    height: 220px;
+}
+.footer .in-content{
+    padding-top: 50px;
+}
+.footer .footer-info {
+    display: flex;
+    font-size: 14px;
+}
+
+.footer .footer-info span {
+    width: 200px;
+    margin-right: 150px;
+}
+
+.footer .footer-info ul {
+    margin-right: 285px;
+}
+
+.footer .footer-info a{
+    text-decoration: underline;
+}
+.footer .footer-info .footer-logo-ref {
+    display: flex;
+}
+.footer .footer-info .footer-logo-ref div {
+    max-width: 170px;
+    margin: 0 10px;
+}
+
+/*--------------------SLIDER------------------------*/
+
+.slider {
+    max-height: 400px;
+}
+
+.slider .slider-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.slider .slider-container .slides {
+    display: none;
+}
+
+
+.slider .slider-container .slides img{
+    height: 400px;
+    max-width: 860px;
+    opacity: 0.7;
+}
+.slider .slider-container .slides .slide-number {
+    position: absolute;
+    text-shadow: -4px 3px black;
+    width: 120px;
+    height: 120px;
+    color: grey;
+    font-size: 120px;
+    top: 30%;
+    left: 20%;
+}
+
+.slider .slider-container .slider-button{
+    cursor: pointer;
+    position: absolute;
+    top: 155px;
+    width: 34px;
+    height: 61px;
+    display: flex;
+    background-color: rgb(210, 210, 210);
+    border-radius: 3px 3px 3px 3px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+.slider .slider-container .slider-button:hover{
+    background-color: #808080;
+}
+.slider .slider-container .slider-button strong {
+    color: #000;
+    margin: auto;
+    font-size: 18px;
+}
+
+.slider .slider-container .slider-button.next {
+    right: 0;
+}
+.slider .slider-container .slider-button.prev {
+    left: 0;
+}
+
+/*--------------------CONTENT------------------------*/
+
+.content, .content a{
+    color: #767676;
+}
+.content a{
+    text-decoration: underline;
+}
+
+.content .breadcrumb, .content .content-block{
+    justify-content: flex-start;
+}
+.content .breadcrumb {
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.content .breadcrumb ul {
+    list-style: none;
+}
+
+.content .breadcrumb ul li {
+    display: inline;
+    font-size: 14px;
+}
+
+.content .breadcrumb ul li+li:before {
+    padding: 4px;
+    content: "/\00a0";
+}
+.content .content-block .left-block{
+    margin-right: 20px;
+}
+
+.content .content-block .left-block a{
+    text-decoration: none;
+}
+
+.content .content-block .left-block a:hover{
+    text-decoration: underline;
+}
+.content .content-block .left-block .left-menu{
+    width: 180px;
+    height: 220px;
+    user-select: none;
+}
+
+.content .content-block .left-block .left-menu-elem ul{
+    padding-left: 15px;
+    display: none;
+}
+.content .content-block .left-block .left-menu-elem span{
+    font-size: 18px;
+}
+.content .content-block .left-block .left-menu-elem span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    margin-right: 15px;
+}
+.column:nth-child(3n) {
+    margin-right: 0;
+}
+
+.content .content-block .center-block {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content .content-block .center-block a {
+    text-decoration: none;
+}
+.content .content-block .center-block .product-list {
+    margin-bottom: 15px;
+}
+
+.content .content-block .center-block .product-list .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    height: 380px;
+    background-color: rgb(220,220,220);;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.content .content-block .center-block .product-list .product .product-img {
+    width: 210px;
+    height: 210px;
+
+}
+.content .content-block .center-block .product-list .product .product-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.content .content-block .center-block .product-list .product .product-bottom span{
+    font-size: 28px;
+    color: #000;
+}
+.content .content-block .center-block .product-list .product .product-bottom img {
+    width: 28px;
+    height: 28px;
+}
+/*--------------------FEEDBACK------------------------*/
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-group label {
+    display: block;
+}
+
+.feedback-input {
+    width: 340px;
+    height: 40px;
+    padding-left: 15px;
+    font-size: 18px;
+}
+
+.input-error {
+    box-shadow: inset 0px 0px 14px 0px #f75757;
+    border-color: #f75757;
+}
+
+
+#msg {
+    width: 340px;
+    height: 140px;
+    resize: none;
+    padding: 10px;
+}
+.feedback {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 2;
+}
+
+.feedback-container {
+    position: fixed;
+    top: 80px;
+    left: calc(50% - (470px / 2));
+    width: 470px;
+    height: 580px;
+    background-color: white;
+    color: rgb(83, 83, 83);
+}
+
+.feedback-container-parent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.feedback h2 {
+    font-size: 24px;
+}
+.feedback #contact-info {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 400px;
+    justify-content: space-between;
+}
+.feedback button {
+    background-color: rgb(120, 120, 120);
+    color: white;
+    font-size: 18px;
+    font-family: "PT Sans";
+}
+.feedback #close {
+    position: absolute;
+    right: -27px;
+    top: -27px;
+    width: 27px;
+    height: 27px;
+}
+
+.feedback #send {
+    width: 130px;
+    height: 42px;
+
+}
+    /*--------------------ANIMATION------------------------*/
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
