@@ -31,7 +31,7 @@ ul {
 .slider,
 .center-block {
     position: relative;
-    width: 102%;
+    min-width: min-content;
 }
 
 .in-content, .breadcrumb, .content-block{
